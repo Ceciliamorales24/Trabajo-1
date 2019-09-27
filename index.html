@@ -15,9 +15,17 @@
 
     <footer>
         <section class="parte1">
+            <!-- Por convencion, todos los selectores HTML deben estar en minusculas. Creo que nunca lo mencione en clase, asi que
+            no tenian por que saberlo, pero HTML ignora las mayusculas en los nombres de las clases... y CSS no! Asi que si por error
+            escribimos una clase en mayusculas en HTML, pero en minusculas en CSS, no se va a aplicar. 
+            La idea es siempre mantener una simetria en los nombres de las clases: algunas en mayusculas y otras
+            en minusculas puede generar confusiones en el CSS. Siempre en minusculas es una buena regla.  -->
             <div class="Columna1">
 
                 <h1>WAYNE</h1>
+                <!-- Recuerden que el H1 es el elemento que el SEO va a considerar como el mas importante de nuestra web, 
+                y en general nunca se encontraria en el footer, sino en la primera parte de la pagina que ve el usuario. En este caso, 
+                seria mejor que este selector fuera un h2 o h3 -->
 
                     <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.
                     </p>
@@ -27,6 +35,8 @@
 
                 <h3>USEFUL LINKS</h3>
                     <ul>
+                        <!-- Seria bueno que estos fueran links de verdad, aunque no lleven a ninguna parte. Es decir, que tengan
+                        una etiqueta <a> -->
                         <li>Home</li>
                         <li>About us</li>
                         <li>Services</li>
@@ -80,6 +90,13 @@
     </footer>
 
     <div class="copyright">
+        <!-- Los estilos deben ir siempre en CSS, nunca en HTML. La etiqueta <strong> no se recomienda porque 
+            asumimos que los estilos iran en CSS: si un dia queremos cambiar el peso de esta fuente, el HTML no sera el primer
+            lugar en donde iremos a buscarlo. 
+            Una mejor solucion seria rodear a "Wayne Enterprises" con una etiqueta <span> y en CSS decir 
+                .copyright span {
+                    font-weight: bold
+                } -->
         <p> © Copyright <strong>Wayne Enterprises.</strong> All Rights Reserved <br> Designed by ...
         </p>
    </div>
